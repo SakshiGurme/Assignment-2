@@ -1,0 +1,31 @@
+
+
+#Q1) Write a function is_palindrome(string) that takes a string as input and returnsTrue if the string reads the same backward as forward (e.g., "racecar" is a palindrome).
+
+def is_palindrome(string):
+    if string == string[::-1]:
+        return('is plaindrome')
+    else:
+        return('is not palindrome' )
+    
+s=input('enter a string:')
+print(s,is_palindrome(s))
+
+
+#Q2)Write a function reverse_list(data) that takes a list as input and returns a new listwith the elements in reverse order (e.g., reverse_list([1, 2, 3]) returns [3, 2, 1]).
+
+def reverse_list(data):
+    data=list(reversed(data))
+    return datadef reverse_list(data):
+    data=list(reversed(data))
+    return data
+
+list1=input('Enter list elements by separating them using space:')
+mylist=list1.split()
+mylist=[int(num) for num in mylist]
+print(reverse_list(mylist))
+
+#Q3)Write a Python function to find whether the number if prime or not.def isPrime(num)
+
+
+
