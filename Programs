@@ -26,6 +26,33 @@ mylist=[int(num) for num in mylist]
 print(reverse_list(mylist))
 
 #Q3)Write a Python function to find whether the number if prime or not.def isPrime(num)
+ 
+
+Q5)Write a function write_file(filename, content) that takes a filename andcontent as input and writes the content to the specified file.
+
+def write_file(filename, content):
+  with open(filename,'w') as file:
+    file.write(content)
+
+f=input('enter file name:')
+con=input('enter file contents:')
+print('written successfully')
+
+Q6)Write a function copy_file(source_filename, destination_filename) thattakes the source and destination filenames as input and copies the content of the sourcefile to the destination file. Handle cases where the source file doesn't exist.
+
+def copy_file(source_filename, destination_filename):
+    try:
+        with open(source_filename, 'r') as source_file:
+            content = source_file.read()
+        with open(destination_filename, 'w') as destination_file:
+            destination_file.write(content)
+        print(f"Content copied from {source_filename} to {destination_filename}")
+    except FileNotFoundError:
+        print('file not found')
+
+s=input('enter source file name')
+d=input('enter destination file name ')
+copy_file(s,d)
 
 
 
